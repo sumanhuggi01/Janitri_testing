@@ -16,7 +16,7 @@ loginPage = new LoginPage(driver);
 
 @Test
 	public void testLoginButtonDisabledWhenFieldAreEmpty() {
-      Assert.assertTrue(loginPage.isLoginButtonEnabled());
+      Assert.assertFalse(loginPage.isLoginButtonEnabled());
   }
 
 
