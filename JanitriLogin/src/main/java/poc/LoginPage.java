@@ -12,7 +12,7 @@ public class LoginPage {
     @FindBy(id = "formEmail") WebElement userIdInput;
     @FindBy(name = "password") WebElement passwordInput;
     @FindBy(xpath = "//button[@class=\"login-button\"]") WebElement loginButton;
-    @FindBy(xpath = "/html/body/div/div/div/div[2]/div[2]/div/form/div[2]/img") WebElement eyeIcon;
+    @FindBy(xpath = "//img[@alt='Password Not Visible']") WebElement eyeIcon;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
